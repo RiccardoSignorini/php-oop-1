@@ -3,17 +3,19 @@
     class movie{
         public $title;
         public $lenguage;
+
+        function __construct($_lenguage){
+            $this->lenguage = $_lenguage;
+        }
     }
 
-    $batman = new movie();
+    $batman = new movie('English');
     $batman->title = 'Batman';
-    $batman->lenguage = 'English';
 
     var_dump($batman);
 
-    $spider_man = new movie();
+    $spider_man = new movie('German');
     $spider_man->title = 'Spider Man';
-    $spider_man->lenguage = 'German';
 
     var_dump($spider_man)
 
